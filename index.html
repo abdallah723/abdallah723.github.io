@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Password Generator</title>
-        <link rel = "stylesheet" href = "styles.css">
+        <title>Code Quiz</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="script.js"></script>
     </head>
 
     <body>
-        <header>
-            <h1>Password Generator</h1>
-        </header>
+        <div class="jumbotron">
+            <h1 class="display-4">Hello!</h1>
+            <p class="lead">Thank you for taking the time and taking my Code Quiz.</p>
+            <hr class="my-4">
+            <p>This is not the most challenging quiz, but it should be fun.</p>
+            <a class="btn btn-primary btn-lg" href="#" id="startBtn" role="button">Start Quiz</a>
+          </div>
+        <button id="highscore" class="btn btn-primary btn-lg">Highscore</button>
+        <h1 class="time"></h1>
 
-        <h2>Generate Password</h2>
-        <textarea
-        readonly
-        id = "password"
-        placeholder="Your Secure Password"
-        aria-label="Generated Password"
-        ></textarea>
-        <button id = "generate">Generate Password</button>
-        <button id = "copy">Copy Password to Clipboard</button>
-
-        <script src = "script.js"></script>
+        <div class="container">
+            <h2 id="countdown"></h2>
+            <h3 id="main"></h3>
+            <h4 id="questions"></h4>
+        </div>
+        
     </body>
 </html>
